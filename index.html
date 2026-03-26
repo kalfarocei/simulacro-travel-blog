@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel blog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script defer src="js/index.js"></script>
+  </head>
+
+  <body>
+<header class="header">
+  <h4 class="header__logo">Vantage.</h4>
+
+  <button class="header__toggle">&#9776;</button>
+
+  <nav class="header__nav">
+    <a class="header__link" href="#">Destinations</a>
+    <a class="header__link" href="#">Journals</a>
+    <a class="header__link" href="#">About</a>
+    <button class="header__button btn">Book</button>
+  </nav>
+</header>
+
+    <!-- Banner -->
+    <main class="body">
+      <section class="banner section">
+        <div class="banner__content">
+          <h1 class="banner__title">REDEFINE THE WAY YOU TRAVEL</h1>
+          <p class="banner__text">
+            A curated platform for the modern explorer. Experience destinations
+            through a lens of architectural precision and natural serenity.
+          </p>
+        </div>
+
+        <div class="banner__image">
+          <img
+            id="imagen-rotativa"
+            src="media/Serene landscape of Yosemite Valley.webp"
+            alt="imagen-rotativa"
+          />
+          <div class="current">
+            <h6>Current Expedition</h6>
+            <p>Valley of Calm</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Presentation -->
+      <section class="presentation section">
+        <div class="presentation__block">
+          <h4 class="presentation__title">The Precision of Travel.</h4>
+
+          <div class="presentation__text">
+            <p>
+              We believe in the beauty of the grid. Not just in our design, but
+              in the way we structure your journeys. From the selection of
+              boutique hotels to the timing of your arrivals, every detail is
+              considered with Swiss-like precision to ensure your absolute peace
+              of mind.
+            </p>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured -->
+<section class="featured section">
+  <div class="featured__header">
+    <h3 class="featured__title">Featured</h3>
+  </div>
+
+  <div class="featured__slider">
+    <button class="featured__arrow left" onclick="move(-1)" id="prev">
+      <span class="material-symbols-outlined">arrow_back_ios_new</span>
+    </button>
+
+    <div class="featured__viewport">
+      <div class="featured__grid" id="track">
+        <article class="card">
+          <img class="card__image" src="media/Atacama Desert.webp" alt="" />
+          <div class="card__content">
+            <h5 class="card__title">Atacama Desert</h5>
+            <p class="card__location">Chile</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="media/Swiss Alps.webp" alt="" />
+          <div class="card__content">
+            <h5 class="card__title">Zermatt</h5>
+            <p class="card__location">Valais, Switzerland</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="media/Background.webp" alt="" />
+          <div class="card__content">
+            <h5 class="card__title">Kyoto</h5>
+            <p class="card__location">Kansai, Japan</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="media/Atacama Desert.webp" alt="" />
+          <div class="card__content">
+            <h5 class="card__title">Atacama Desert</h5>
+            <p class="card__location">Chile</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="media/Swiss Alps.webp" alt="" />
+          <div class="card__content">
+            <h5 class="card__title">Zermatt</h5>
+            <p class="card__location">Valais, Switzerland</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__image" src="media/Background.webp" alt="" />
+          <div class="card__content">
+            <h5 class="card__title">Kyoto</h5>
+            <p class="card__location">Kansai, Japan</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <button class="featured__arrow right" onclick="move(1)" id="next">
+      <span class="material-symbols-outlined">arrow_forward_ios</span>
+    </button>
+  </div>
+</section>
+
+      <!-- Membership -->
+      <section class="membership section">
+        <div class="membership__block">
+          <h2 class="membership__title">Start Your Defined Journey</h2>
+          <p class="membership__text">
+            Join our exclusive network for access to private villas,
+            personalized itineraries, and 24/7 Swiss-quality support.
+          </p>
+          <a href="#" class="btn membership__button">Apply for Membership</a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer__container">
+
+    <div class="footer__top">
+
+      <div class="footer__column-main">
+        <h4 class="footer__logo">Vantage.</h4>
+        <ul class="footer__list">
+          <li>Precision in every mile.</li>
+          <li>Serenity in every stay.</li>
+          <li>Design in every moment.</li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h6 class="footer__heading">Directory</h6>
+        <ul class="footer__list">
+          <li>Locations</li>
+          <li>Experiences</li>
+          <li>Curations</li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h6 class="footer__heading">Company</h6>
+        <ul class="footer__list">
+          <li>Our Ethos</li>
+          <li>Sustainability</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h6 class="footer__heading">Newsletter</h6>
+        <button class="footer__button">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        © 2023 Vantage Travel Platforms AG. All Rights Reserved.
+      </p>
+      <ul class="footer__legal">
+        <li>Legal</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+  </body>
+</html>
