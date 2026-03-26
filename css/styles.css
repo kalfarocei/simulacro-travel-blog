@@ -416,7 +416,7 @@ li {
 /*. -------------- Footer --------------- */
 
 .footer {
-  max-width: var(--max-width-xl);
+  max-width: 100%;
   font-family: var(--font-text);
   margin: 0 auto;
   background-color: rgba(236, 218, 193, 0.2);
