@@ -358,7 +358,7 @@ li {
 }
 
 .card {
-  min-width: calc(100% / 3);
+  min-width: calc(100%);
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
